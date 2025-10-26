@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #0c34fa 0%, #1bffff 30%, #ffe8d6 60%, #7ad40c 100%);
+  min-height: 100vh;
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1.2rem;
+  background: #c8f808;
+  color: rgb(0, 0, 0);
+  border-radius: 16px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 16px rgba(233, 30, 99, 0.2);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+header p {
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+.info, .programacao {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 16px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.info h2,
+.programacao h2 {
+  text-align: center;
+  margin-bottom: 1.4rem;
+  color: #000000;
+  font-size: 1.8rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item h3 {
+  font-weight: bold;
+  color: #0606ff;
+  font-size: 1.1rem;
+}
+
+.info-item p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.atividade {
+  margin-bottom: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.atividade:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.atividade h3 {
+  color: #7b07ff;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.atividade h4 {
+  font-size: 1.15rem;
+  color: #5d0036;
+  margin-bottom: 0.4rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.6rem;
+  background: #1212a88d;
+  border-radius: 16px;
+  color: #880e4f;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* ✅ Responsividade completa */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .info h2,
+  .programacao h2 {
+    font-size: 1.6rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .atividade h3 {
+    font-size: 1.2rem;
+  }
+
+  .atividade h4 {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  header {
+    padding: 1.6rem 1rem;
+    border-radius: 14px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .info, .programacao, footer {
+    padding: 1.3rem;
+    border-radius: 14px;
+  }
+
+  .info-item h3,
+  .info-item p,
+  .atividade h3,
+  .atividade h4,
+  footer p {
+    font-size: 1rem;
+  }
+}
